@@ -6,6 +6,7 @@ export default function RGB() {
   return (
     <>
       <div className="background" style={{ background: `rgb(${r}, ${g}, ${b})` }}>
+        <img src={process.env.PUBLIC_URL + '/nike.png'} />
         <p>{`rgb(${r}, ${g}, ${b})`}</p>
       </div>
     </>
