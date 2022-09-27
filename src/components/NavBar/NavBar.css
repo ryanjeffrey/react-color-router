@@ -12,6 +12,10 @@ nav {
 a {
     color: inherit;
     text-decoration: none;
+    transition: color 1s ease;
+}
+a:hover {
+    color: rgb(180, 180, 180);
 }
 
 p {
