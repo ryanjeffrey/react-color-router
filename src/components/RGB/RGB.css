@@ -1,0 +1,26 @@
+img {
+  height: 250px;
+}
+
+.background {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  transition: background 1s ease;
+  flex-direction: column;
+}
+
+.navy.active {
+  color: rgb(10, 22, 42);
+}
+
+.orange.active {
+  color: rgb(199, 56, 4);
+}
+
+.grey.active {
+  color: rgb(238, 238, 238);
+}
