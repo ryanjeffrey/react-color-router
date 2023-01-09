@@ -1,3 +1,7 @@
+const webpack = require('webpack');
+const CopyPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
   mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
   entry: ['./src/index.js'],
@@ -41,4 +45,18 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: '/src/index.html',
+    }),
+    new webpack.ProvidePlugin({
+      React: 'react',
+    }),
+    new CopyPlugin({
+      patterns: [
+        // Note that the "to" is relative to the output dir.
+        { from: 'public', to: '.' },
+      ],
+    }),
+  ],
 };
