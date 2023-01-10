@@ -10,7 +10,7 @@ module.exports = {
     publicPath: '/',
     clean: true,
     filename: 'app.bundle.js',
-    path: __dirname + '/dist',
+    path: __dirname + '/build',
   },
   devServer: {
     // Necessary for HTML 5 routes along with publicPath.
