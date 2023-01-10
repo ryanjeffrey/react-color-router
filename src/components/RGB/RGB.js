@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom';
+import nikeLogo from '../../nike.png';
 import './RGB.css';
 
 export default function RGB() {
@@ -6,7 +7,7 @@ export default function RGB() {
   return (
     <>
       <div className="background" style={{ background: `rgb(${r}, ${g}, ${b})` }}>
-        {/* <img src={process.env.PUBLIC_URL + '/nike.png'} /> */}
+        <img src={nikeLogo} />
         <p>{`rgb(${r}, ${g}, ${b})`}</p>
       </div>
     </>
